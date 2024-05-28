@@ -1,14 +1,8 @@
 #Bu program Python3 ile yazilmistir.
 import os
 os.system("clear")
-os.system("figlet makifves")
-print("-" *50)
-
-print("Bu programin kotuye kullanimi yasaktir.")
-print("Iletisim Mail: mail@makifves.com")
 print("-" *50)
 print()
-
 print("1-) Veri Toplama")
 print("2-) Saldırılari Araclari")
 print("-" *50)
@@ -33,8 +27,6 @@ if secim==1:
 		ip=str(input("Hedef IP: "))
 		print("-" *50)
 		os.system("python3 araclar/IPGeoLocation/ipgeolocation.py -t " +ip)
-	
-	
 	
 	elif secenek==2:
 		os.system("clear && figlet Server Hizli Tarama")
@@ -75,20 +67,19 @@ if secim==1:
 		site=str(input("Site Adresi: "))
 		print("-" *50)
 		os.system("wafw00f " +site)
-		
-	elif aecenek==7:
+	
+	elif secenek==7:
 		os.system("clear && figlet OSR Framework")
 		print("OSR Framework ile Bilgi Toplama Aracına Hos Geldiniz.")
 		print("-" *50)
-		
+		os.system("osrframework")
 		
 	elif secenek==8:
 		os.system("clear && figlet Telefon Numarasi ile Bilgi Toplama")
-		print("Bu arac icin  kullanilmistir.")
+		print("Bu arac icin PhoneInfoga kullanilmistir.")
 		print("-" *50)
-		os.system("git clone https://www.github.com/sundoandev/PhoneIn")
-		
-		
+		os.system("git clone https://www.github.com/sundoandev/PhoneInfoga")
+
 #2. Secim
 elif secim==2:
 	print("""
@@ -107,7 +98,6 @@ elif secim==2:
 		print("-" *50)
 		print("Kullanim parametreleri asagida listelenmistir...")
 		os.system("wordliser --help")
-		
 		
 	elif secenek==2:
 		os.system("clear && figlet WP Hizli Tarama")
@@ -136,8 +126,7 @@ elif secim==2:
 		os.system("macchanger -r " +bag)
 		os.system("ifconfig " +bag + " up")
 		print("MAC Adresiniz random bir degere atandi.")
-		
-		
+
 	elif secenek==5:
 		os.system("clear && figlet Elle MAC")
 		print("*" *50)
@@ -158,7 +147,7 @@ elif secim==2:
 		os.system("macchanger --mac " +mac + " " +bag)
 		os.system("ifconfig " +bag + " up")
 		print("MAC Adresi manuel olarak degistirildi.")
-		
+
 	elif secenek==6:
 		os.system("clear && figlet MAC Orjinale Dondurucu")
 		print("-" *50)
@@ -174,14 +163,14 @@ elif secim==2:
 		print("*" *50)
 		print("MAC  Adresi orjinale dondu.")
 		print("*" *50)
-		
+
 	elif secenek==7:
 		os.system("clear && figlet Internet Kesme")
 		print("Bu arac icin kickthemout kullanilmistir.")
 		print("*" *50)
 		print()
 		os.system("clear && sudo python3 araclar/kickthemout/kickthemout.py")		
-		
+
 	else:
 		print("Hatali secim yaptiniz:( ")
 		
